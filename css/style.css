@@ -127,24 +127,24 @@ p {
 /* --------media queries------------- */
 /*------------ mobile devices----------- */
 @media only screen and (max-width: 688px) {
-    .top{
-        display: flex;
-        flex-direction: column;
-    }
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
   .products {
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 /* -----------Tablet ----------- */
-@media only screen and (min-width: 688px) and (max-width:992px){
-   .top{
-       display: grid;
-       grid-template-columns: repeat(2,1fr);
-   }
-    .products{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
