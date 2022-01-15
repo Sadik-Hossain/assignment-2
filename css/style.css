@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ============= common ========== */
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main-button {
+  outline: 0;
+  border: 0;
+  padding: 15px 20px;
+  background-color: royalblue;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 black;
+  position: relative;
+  top: 0;
+}
+.main-button:active {
+  top: 5px;
+  box-shadow: 0 2px 0 black;
+}
+
+.main-button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 5px 0 royalblue;
+  transition: background-color 0.4s ease;
+}
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+}
+.fa-star,
+.fa-star-half-alt {
+  color: gold;
+}
+.fab {
+  font-size: 45px;
+  letter-spacing: 20px;
+}
+/* ========== common =========== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+}
+
+.top {
+  height: calc(100vh - 60px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.top-left h1 {
+  font-size: 40px;
+}
+.top-left p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-right img {
+  width: 100%;
+}
+
+/* product part css */
+.products {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  padding: 20px;
+  box-shadow: 0px 10px 25px gray;
+  border-radius: 12px;
+}
+.card h3,
+h4,
+p {
+  line-height: 2.2;
+}
+.button-1 {
+  float: right;
+}
+
+/* ======= footer =================== */
+footer {
+  background-color: black;
+  color: azure;
+}
+footer h3,
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* --------media queries------------- */
+/*------------ mobile devices----------- */
+@media only screen and (max-width: 688px) {
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+  .products {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+  }
+}
+
+/* -----------Tablet ----------- */
+@media only screen and (min-width: 688px) and (max-width:992px){
+   .top{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+   }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
